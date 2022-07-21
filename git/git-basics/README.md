@@ -136,3 +136,19 @@ git log --oneline
 ```
 
 - compact (every commit in single line)
+
+## Git Help
+
+```sh
+git <command> -h
+git <command> -help
+```
+
+- available options for the specific command
+- `--help` opens the relevant `git` man page
+
+```sh
+git help --all
+```
+
+- all possible commands
