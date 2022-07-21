@@ -152,3 +152,56 @@ git help --all
 ```
 
 - all possible commands
+
+## Git Branch
+
+```sh
+git branch <branch-name>
+```
+
+- creates a new branch
+
+```sh
+git branch
+```
+
+- lists the branches
+
+```sh
+git checkout <branch-name>
+git switch <branch-name>
+```
+
+- switch to `<branch-name>`
+
+```sh
+git checkout -b <branch-name>
+git switch -c <branch-name>
+```
+
+- **creates** (if not pre-exists) and **switches** to `<branch-name>`
+
+## Git Merge
+
+```sh
+git merge <branch-name>
+```
+
+- merges `<branch-name>` to current branch
+
+- if the `<branch-name>` came directly from `main`, and no changes are made to `main` while working, this is a continuation of `main`. it is seen as **_"Fast-forward"_**, just pointing both `main` and `<branch-name>` to the same commit.
+
+```sh
+git branch -d <branch-name>
+```
+
+- deletes `<branch-name>`
+  - must be fully merged in its upstream branch, or in `HEAD`
+  - can't delete current branch
+
+```sh
+git branch -D <branch-name>
+```
+
+- `-D` is shortcut for `--delete --force`
+- deletes `<branch-name>` even if not merged
