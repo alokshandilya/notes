@@ -102,3 +102,37 @@ git status -s
     - `A` - Files added to stage
     - `M` - Modified files
     - `D` - Deleted files
+
+## Git Commit
+
+```sh
+git commit
+```
+
+- will open default editor for writing commit message, description (optional)
+- `git config --global core.editor nvim`
+- `git config --global core.editor emacs`
+
+```sh
+git commit -m <commit-message>
+```
+
+```sh
+git commit -a -m <commit-message>
+```
+
+- commit the updated files directly, skipping the staging environment
+  - not recommended
+  - skipping the stage step can sometimes make you include unwanted changes
+
+## Git Commit Log
+
+```sh
+git log
+```
+
+```sh
+git log --oneline
+```
+
+- compact (every commit in single line)
