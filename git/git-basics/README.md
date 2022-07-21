@@ -205,3 +205,17 @@ git branch -D <branch-name>
 
 - `-D` is shortcut for `--delete --force`
 - deletes `<branch-name>` even if not merged
+
+## Merge Conflict
+
+```sh
+git merge <branch-name>
+```
+
+- merges `<branch-name>` to current branch
+- if not able to merge fully and `conflict` occurs, solve it in the respective files. by seeing the differences between the versions and edit it as wanted
+
+- You can work through the conflict with a number of tools:
+  - use a mergetool. `git mergetool` to launch a graphical `mergetool` which will work you through the merge.
+  - look at the diffs. `git diff` will show a three-way diff, highlighting changes from both the `HEAD` and `MERGE_HEAD` versions.
+  - look at the diffs from each branch. `git log --merge -p <path>` will show diffs first for the `HEAD` version and then the `MERGE_HEAD` version.
