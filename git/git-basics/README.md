@@ -56,3 +56,49 @@ git init
 
 When you first add files to an empty repository, they are all untracked.  
 To get `git` to track them, you need to stage them, or add them to the staging environment.
+
+## Git Staging Environment
+
+staged files are files that are ready to be committed to the repository you are working on
+
+```sh
+git add file1.txt file2.cpp file3.js
+```
+
+- adds file1.txt, file2.cpp, file3.js to staging area
+
+```sh
+git add .
+```
+
+- stages new files and modifications, without deletions (on the current directory and its subdirectories).
+
+```sh
+git add -A
+```
+
+- stages all changes
+
+```sh
+git add -u
+```
+
+- stages modifications and deletions, without new files
+
+```sh
+git status
+```
+
+- changes in working directory
+
+```sh
+git status --short
+git status -s
+```
+
+- changes in working directory (in more compact way)
+  - Short status flags are:
+    - `??` - Untracked files
+    - `A` - Files added to stage
+    - `M` - Modified files
+    - `D` - Deleted files
