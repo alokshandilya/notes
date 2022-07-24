@@ -46,13 +46,11 @@ git config --global user.email "xxxx...@..xxx"
 git init
 ```
 
-- `Initialized empty Git repository in /home/aloks/test/.git/`
-
 ## Git Adding New Files
 
 - Files in your `git` repository folder can be in one of 2 states:
-  - Tracked - files that `git` knows about and are added to the repository
-  - Untracked - files that are in your working directory, but not added to the repository
+  - **_Tracked_** $\to$ files that `git` knows about and are added to the repository
+  - **_Untracked_** $\to$ files that are in your working directory, but not added to the repository
 
 When you first add files to an empty repository, they are all untracked.  
 To get `git` to track them, you need to stage them, or add them to the staging environment.
