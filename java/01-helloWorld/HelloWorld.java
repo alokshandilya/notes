@@ -6,8 +6,16 @@ public class HelloWorld {
     */
 
     System.out.print("Hello");
-    System.out.print("World");
-    System.out.println("Hello ");
+    System.out.println("World");
+    System.out.println("Hello");
     System.out.println("World");
   }
 }
+
+// OUTPUT
+
+/* 
+  HelloWorld
+  Hello
+  World
+*/
