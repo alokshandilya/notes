@@ -11,6 +11,7 @@ public class PrimeOrNotAlt {
     if (n == 0 || n == 1) {
       System.out.println("NOT Prime");
     } else {
+      // Time Complexity: O(√N), better than O(N)
       for (int i = 2; i <= Math.sqrt(n); i++) {
         if (n % i == 0) {
           System.out.println("NOT Prime");
