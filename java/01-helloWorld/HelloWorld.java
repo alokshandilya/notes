@@ -12,10 +12,8 @@ public class HelloWorld {
   }
 }
 
-// OUTPUT
-
-/* 
-  HelloWorld
-  Hello
-  World
-*/
+/************** OUTPUT ********************
+ *  HelloWorld
+ *  Hello
+ *  World
+ *****************************************/
