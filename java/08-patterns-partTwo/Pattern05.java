@@ -1,4 +1,4 @@
-/* print the pattern [FLOYD'S TRIANGLE]
+/* print the pattern
 
   1
   0 1
