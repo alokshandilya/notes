@@ -5,6 +5,8 @@ public class BinarySearch {
     // Time Complexity : O(log n)
     while (start <= end) { // == when single element remains
       int mid = (start + end) / 2;
+      // or (same)
+      // int mid = start + (end - start) / 2;
       if (arr[mid] == n) { // found
         return mid;
       } else if (arr[mid] < n) { // right
