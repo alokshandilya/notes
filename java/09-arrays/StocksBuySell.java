@@ -5,6 +5,8 @@
 
 public class StocksBuySell {
   public static int buySellStocks(int prices[]) {
+
+    // Time Complexity : O(n)
     int buyPrice = Integer.MAX_VALUE;
     int maxProfit = 0;
 
