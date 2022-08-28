@@ -9,7 +9,7 @@
 */
 
 public class Arrays02 {
-  public static void updateMarks(int n[]) {
+  public static void updateMarks(int[] n) {
     for (int i = 0; i < n.length; i++) {
       n[i] += 1;
     }
@@ -24,7 +24,7 @@ public class Arrays02 {
     updateMarks(marksComp);
     System.out.println(marksComp); // 99
     System.out.println();
-    int marks[] = {94, 97, 99};
+    int[] marks = {94, 97, 99};
     updateMarks(marks);
     for (int i = 0; i < marks.length; i++) {
       System.out.println(marks[i]);

@@ -6,7 +6,9 @@ import java.util.Scanner;
 public class Arrays01 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int array1[] = new int[5];
+    int[] array1 = new int[5];
+    // or
+    // int array1[] = new int[5];
     int array2[] = {1, 2, 3};
     String array3[] = {"Alok", "Shandilya"};
     String array4[] = new String[3];
